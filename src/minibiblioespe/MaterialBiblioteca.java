@@ -1,6 +1,6 @@
 package minibiblioespe;
 
-public class MaterialBiblioteca {
+public abstract class MaterialBiblioteca {
     //Atributos
     protected String codigo, titulo, autor;
     protected int anioPublicacion;

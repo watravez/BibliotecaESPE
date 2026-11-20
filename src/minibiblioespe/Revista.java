@@ -3,7 +3,7 @@ package minibiblioespe;
 public class Revista extends MaterialBiblioteca implements IPrestamo{
     //Atributos 
     private int numEdicion;
-    private String Categoria;
+    private String categoria;
 
     @Override
     public void prestar() {

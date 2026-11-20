@@ -9,13 +9,44 @@ public class Docente extends Usuario{
     }    
         
     public Docente(String departamento, String especialidad, String id, 
-            String cedula, String nommbres, String direccionDomicilio, int edad) {
-        super(id, cedula, nommbres, direccionDomicilio, edad);
+            String cedula, String nombres, String direccionDomicilio, int edad) {
+        super(id, cedula, nombres, direccionDomicilio, edad);
         this.departamento = departamento;
+        this.especialidad = especialidad;
+    }
+    //Getters y Stters
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
     
     //Metodos heredados de USUARIO
+    @Override
+    public void consultarMateriales(){
+        System.out.println("Profesor esta consultando materiales");
+    }
     
+    @Override
+    public void solicitarPrestamo(){
+        System.out.println("Profesor esta consultando materiales");
+    }
+    
+    @Override
+    public void mostrarDatos(){
+        super.mostrarDatos();
+        System.out.println("Departamento: " + departamento);
+        System.out.println("Especialidad: " + especialidad);
+    }
 
 }

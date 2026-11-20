@@ -42,29 +42,54 @@ public class Biblioteca {
     
     //Metodos
     public void agregarUsuarios(Usuario us){
-    
+        listaUsuarios.add(us);
     }
     
     public void agregarMaterial(MaterialBiblioteca mt){
-    
+        listaMateriales.add(mt);
     }
     
     public void devolverMaterial(String codigo){
-    
+        
     }
     
     public void mostrarUsuarios(){
-    
+        if(listaUsuarios.isEmpty()){
+            System.out.println("No hay Usuarios Registrados...");
+        } else{
+            for (int i = 0; i < listaUsuarios.size(); i++) {
+                System.out.println("Registro de Usuario [ " + (i+1) + " ]");
+                listaUsuarios.get(i).mostrarDatos();    
+            }                              
+        }
+        
     }
     
     public void mostrarMateriales(){
-    
+        if (listaMateriales.isEmpty()){
+            System.out.println("No hay Materiales Registrados...");
+        } else {
+            for (int i = 0; i < listaMateriales.size(); i++) {
+                System.out.print("[ " + (i+1) + " ]");
+                listaMateriales.get(i).mostrarInformacion();    
+            }                    
+        }
+        
     }
+    
     public void mostrarPrestamos(){
-    
+        if(listaPrestamos.isEmpty()){
+            System.out.println("No se han realizado Prestamos...");
+        } else {
+            for (int i = 0; i < listaPrestamos.size(); i++) {
+                System.out.println("Registro de Prestamo [ " + (i+1) + " ]");
+                listaPrestamos.get(i).mostrarInfo(); //OJO
+            }                               
+        }
+        
     }
     
-    public void persistencia () {
+    public void persistenciaInfo () {
     
     }
 }
