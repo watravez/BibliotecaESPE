@@ -1,10 +1,24 @@
 package minibiblioespe;
+import java.time.Year;
+
 
 public abstract class MaterialBiblioteca {
     //Atributos
     protected String codigo, titulo, autor;
     protected int anioPublicacion;
     protected boolean disponible;
+    
+    //Constructores
+    public MaterialBiblioteca() {
+    }
+
+    public MaterialBiblioteca(String codigo, String titulo, String autor, int anioPublicacion, boolean disponible) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anioPublicacion = anioPublicacion;
+        this.disponible = disponible;
+    }
 
     //Get y Set
     public String getCodigo() {
@@ -46,15 +60,20 @@ public abstract class MaterialBiblioteca {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-    
-    //Metodos 
-    public void mostrarInformacion (){
-         
-        
+
+    //Metodos NOTA solo pongo los metodos protegitos para no ponerlos como abstractos y no generar un metodo poco eficiente
+    protected void mostrarInformacion (){
+        System.out.println("========== Material Biblioteca ==========");
+        System.out.println("Titulo: "+titulo);
+        System.out.println("Autor: "+autor);
+        System.out.println("codigo: "+codigo);
+        System.out.println("Anio Publicacion: "+anioPublicacion);
+        System.out.println("Estado: "+disponible);
     }
     
     
-    public void calcularMultas(){
-        
+    protected  double calcularMultas(int diasRetraso){
+        return 0;
     }
+    
 }

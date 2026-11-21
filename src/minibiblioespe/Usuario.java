@@ -9,12 +9,13 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String id, String cedula, String nombres, String direccionDomicilio, int edad) {
+    public Usuario(String id, String cedula, String nombres, 
+            String direccionDomicilio, int edad) throws Exception {
         this.id = id;
         this.cedula = cedula;
         this.nombres = nombres;
         this.direccionDomicilio = direccionDomicilio;
-        this.edad = edad;
+        setEdad(edad);
     }
     
     //Getters y Setters NOTA: LOS PUSE POR SI LOS OCUPAMOS
@@ -55,7 +56,10 @@ public class Usuario {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(int edad) throws Exception {
+        if (edad <= 0 || edad > 100 ){
+            throw new Exception("Edad NO Valida. Debe ser mayor 0 y menor a 100.");
+        } 
         this.edad = edad;
     }
         

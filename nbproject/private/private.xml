@@ -4,9 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/MainClass.java</file>
-            <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/Usuario.java</file>
             <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/Estudiante.java</file>
+            <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/Biblioteca.java</file>
             <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/Docente.java</file>
+            <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/Prestamo.java</file>
+            <file>file:/C:/Users/ariel/Documents/POO_Proy/java_p2/miniBiblioESPE/src/minibiblioespe/Usuario.java</file>
         </group>
     </open-files>
 </project-private>

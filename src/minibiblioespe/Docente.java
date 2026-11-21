@@ -9,7 +9,7 @@ public class Docente extends Usuario{
     }    
         
     public Docente(String departamento, String especialidad, String id, 
-            String cedula, String nombres, String direccionDomicilio, int edad) {
+            String cedula, String nombres, String direccionDomicilio, int edad) throws Exception {
         super(id, cedula, nombres, direccionDomicilio, edad);
         this.departamento = departamento;
         this.especialidad = especialidad;
@@ -39,7 +39,7 @@ public class Docente extends Usuario{
     
     @Override
     public void solicitarPrestamo(){
-        System.out.println("Profesor esta consultando materiales");
+        System.out.println("Profesor esta solicitando un prestamo");
     }
     
     @Override
