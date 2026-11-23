@@ -53,9 +53,9 @@ public class Libro extends MaterialBiblioteca implements IPrestamo{
     public void prestar() {
         if (isDisponible() == true) {
             setDisponible(false); // Se marca como prestado (ocupado)
-            System.out.println("El libro " + getTitulo() + " ha sido prestado.");
+            System.out.println("El libro [ " + getTitulo() + " ] ha sido prestado.");
         } else {
-            System.out.println("Error: El libro " + getTitulo() + " ya está prestado.");
+            System.out.println("Error: El libro [ " + getTitulo() + " ] ya esta prestado.");
         }
         
     }
@@ -63,6 +63,6 @@ public class Libro extends MaterialBiblioteca implements IPrestamo{
     @Override
     public void devolver() {
         setDisponible(true); // Vuelve a estar libre
-        System.out.println("El libro " + getTitulo() + " fue devuelto y esta disponible.");
+        System.out.println("El libro [ " + getTitulo() + " ] fue devuelto y esta disponible.");
     }
 }

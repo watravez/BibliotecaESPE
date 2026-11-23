@@ -152,7 +152,7 @@ public class Biblioteca {
         listaPrestamos.add(p);
         
         System.out.println("----> Prestamo a [ " + us.getNombres() + " ] [ " + us.getCedula() + " ] -- | REGISTRADO | --");
-        System.out.println("----> Fecha de Prestamo: [ " + p.getFechaPrestamo() + " ] \nFecha Limite de Entrega: [ " + p.getFechaLimite() + " ]");        
+        System.out.println("----> Fecha de Prestamo: [ " + p.getFechaPrestamo() + " ] Fecha Limite de Entrega: [ " + p.getFechaLimite() + " ]");        
     }   
     
     public void devolverMaterial(String codigoMt, LocalDate fechaDevolucion){
@@ -166,7 +166,7 @@ public class Biblioteca {
         }
         
         if (pActivo == null) {
-            System.out.println("ERROR. No Exiten Prestamos Activos para el material [ " + codigoMt + " ]");
+            System.out.println("ERROR. No Existen Prestamos Activos para el material [ " + codigoMt + " ]");
             return;            
         }
         
@@ -199,8 +199,5 @@ public class Biblioteca {
         }
         
     }
-            
-    public void persistenciaInfo () {
-    
-    }
+
 }

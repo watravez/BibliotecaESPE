@@ -39,12 +39,12 @@ public class Estudiante extends Usuario{
     //Metodos ---------------------------------------------
     @Override
     public void consultarMateriales(){
-        System.out.println("Estudiante esta consultando materiales");
+        System.out.println("Consulta de Materiales solicitando un Estudiante");
     }
     
     @Override
     public void solicitarPrestamo(){
-        System.out.println("Estudiante esta solicitando un prestamo");
+        System.out.println("Solicitado por: Estudiante");
     }
     
     @Override

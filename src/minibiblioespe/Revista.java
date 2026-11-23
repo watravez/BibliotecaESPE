@@ -54,9 +54,9 @@ public class Revista extends MaterialBiblioteca implements IPrestamo{
     public void prestar() {
         if (isDisponible() == true) {
             setDisponible(false); // Se marca como prestado (ocupado)
-            System.out.println("La revista " + getTitulo()+ " ha sido prestada.");
+            System.out.println("La revista [ " + getTitulo()+ " ] ha sido prestada.");
         } else {
-            System.out.println("Error: La revista "+ getTitulo()+ " ya está prestada.");
+            System.out.println("Error: La revista [ "+ getTitulo()+ " ] ya esta prestada.");
         }
         
     }
@@ -64,6 +64,6 @@ public class Revista extends MaterialBiblioteca implements IPrestamo{
     @Override
     public void devolver() {
         setDisponible(true); // Vuelve a estar libre
-        System.out.println("La revista " +getTitulo()+ " fue devuelta y está disponible.");
+        System.out.println("La revista [ " +getTitulo()+ " ] fue devuelta y esta disponible.");
     }
 }

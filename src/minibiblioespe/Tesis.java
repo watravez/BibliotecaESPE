@@ -40,6 +40,7 @@ public class Tesis extends MaterialBiblioteca{
         super.mostrarInformacion(); 
         System.out.println("Tema: "+tema);
         System.out.println("Departamento: "+departamento);
+        System.out.println("Observacion: Solo lectura en sala");
     }    
     //public double calcularMultas(int diasRetraso){ return 0;} NO se implementa, las tesis no se prestan
 }

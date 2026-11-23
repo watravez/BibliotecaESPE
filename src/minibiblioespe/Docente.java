@@ -34,12 +34,12 @@ public class Docente extends Usuario{
     //Metodos heredados de USUARIO
     @Override
     public void consultarMateriales(){
-        System.out.println("Profesor esta consultando materiales");
+        System.out.println("Consulta de Materiales solicitando un Profesor");
     }
     
     @Override
     public void solicitarPrestamo(){
-        System.out.println("Profesor esta solicitando un prestamo");
+        System.out.println("Solicitado por: Docente");
     }
     
     @Override

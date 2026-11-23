@@ -1,6 +1,4 @@
 package minibiblioespe;
-import java.time.Year;
-
 
 public abstract class MaterialBiblioteca {
     //Atributos
@@ -68,7 +66,11 @@ public abstract class MaterialBiblioteca {
         System.out.println("Autor: "+autor);
         System.out.println("codigo: "+codigo);
         System.out.println("Anio Publicacion: "+anioPublicacion);
-        System.out.println("Estado: "+disponible);
+        if (disponible == true) {
+            System.out.println("Estado: DISPONIBLE");
+        } else {
+            System.out.println("Estado: PRESTADO");
+        }
     }
     
     
